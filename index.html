@@ -41,14 +41,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJ1HVSPDEB"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     
     // Замените G-XXXXXXXXXX на ваш Measurement ID
-    gtag('config', 'G-HJ1HVSPDEB', {
+    gtag('config', 'G-XXXXXXXXXX', {
       page_title: 'BSanjik - Перенос сайтов с Tilda',
       page_location: window.location.href,
       custom_map: {
@@ -73,7 +73,7 @@
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
     // Замените XXXXXXXX на ваш номер счетчика Yandex.Metrica
-    ym(104155118, "init", {
+    ym(XXXXXXXX, "init", {
         clickmap:true,
         trackLinks:true,
         accurateTrackBounce:true,
@@ -81,7 +81,7 @@
         trackHash:true
     });
   </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/104155118" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <noscript><div><img src="https://mc.yandex.ru/watch/XXXXXXXX" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   
   <!-- Footer styles -->
   <style>
@@ -317,8 +317,8 @@
       "availableLanguage": ["Russian", "Kazakh"]
     },
     "sameAs": [
-      "https://instagram.com/bolatov.sanzhar",
-      "https://t.me/bsanjik"
+      "https://instagram.com/your_instagram",
+      "https://t.me/your_telegram"
     ]
   }
   </script>
@@ -1146,13 +1146,13 @@
           </a>
           <p class="footer-description">Переносим сайты с конструкторов на индивидуальные решения. Быстро, качественно и с гарантией.</p>
           <div class="footer-social">
-            <a href="https://instagram.com/bolatov.sanzhar" target="_blank" aria-label="Instagram">
+            <a href="https://instagram.com/your_instagram" target="_blank" aria-label="Instagram">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://t.me/bsanjik" target="_blank" aria-label="Telegram">
+            <a href="https://t.me/your_telegram" target="_blank" aria-label="Telegram">
               <i class="fab fa-telegram"></i>
             </a>
-            <a href="https://wa.me/+77085888664" target="_blank" aria-label="WhatsApp">
+            <a href="https://wa.me/+1234567890" target="_blank" aria-label="WhatsApp">
               <i class="fab fa-whatsapp"></i>
             </a>
           </div>
@@ -1362,7 +1362,7 @@
         
         // Yandex.Metrica
         if (typeof ym !== 'undefined') {
-          ym(104155118, 'reachGoal', 'CTA_CLICK');
+          ym(XXXXXXXX, 'reachGoal', 'CTA_CLICK');
         }
         
         console.log('📊 CTA клик отслежен:', buttonText);
@@ -1388,7 +1388,7 @@
               
               // Yandex.Metrica
               if (typeof ym !== 'undefined') {
-                ym(104155118, 'reachGoal', 'SECTION_' + sectionId.toUpperCase());
+                ym(XXXXXXXX, 'reachGoal', 'SECTION_' + sectionId.toUpperCase());
               }
               
               sectionObserver.unobserve(entry.target);
@@ -1418,7 +1418,7 @@
         
         // Yandex.Metrica
         if (typeof ym !== 'undefined') {
-          ym(104155118, 'reachGoal', 'SOCIAL_' + platform.toUpperCase());
+          ym(XXXXXXXX, 'reachGoal', 'SOCIAL_' + platform.toUpperCase());
         }
         
         console.log('📊 Социальная сеть:', platform);
@@ -1427,18 +1427,18 @@
 
     // Конфигурация для отправки формы
       const FORM_CONFIG = {
-        // Email настройки (через EmailJS) - РАБОТАЕТ ✅
-        EMAILJS_SERVICE_ID: 'service_mxmwz1s',
-        EMAILJS_TEMPLATE_ID: 'template_7gie2h4',
-        EMAILJS_PUBLIC_KEY: 'BMEG7068K3O6B9BcG',
+        // Email настройки (через EmailJS) - НАСТРОЙТЕ СВОИ ДАННЫЕ
+        EMAILJS_SERVICE_ID: 'YOUR_EMAILJS_SERVICE_ID',
+        EMAILJS_TEMPLATE_ID: 'YOUR_EMAILJS_TEMPLATE_ID',
+        EMAILJS_PUBLIC_KEY: 'YOUR_EMAILJS_PUBLIC_KEY',
         
         // Telegram настройки - ЗАПОЛНИТЕ ДАННЫЕ ВАШЕГО БОТА
-        TELEGRAM_ENABLED: true,                    // Включаем Telegram
-        TELEGRAM_BOT_TOKEN: '8447654073:AAEFtb2Frbd8bYbBkkppcWtczlGK7L8Sqfc',      // Токен от @BotFather
-        TELEGRAM_CHAT_ID: '391680968',             // Ваш Chat ID
+        TELEGRAM_ENABLED: false,                   // Включите после настройки
+        TELEGRAM_BOT_TOKEN: 'YOUR_TELEGRAM_BOT_TOKEN',      // Токен от @BotFather
+        TELEGRAM_CHAT_ID: 'YOUR_TELEGRAM_CHAT_ID',          // Ваш Chat ID
         
         // Ваша почта для получения уведомлений
-        RECIPIENT_EMAIL: 'kundyz.sanjik@gmail.com'
+        RECIPIENT_EMAIL: 'your-email@example.com'
       };
 
     // Функция отправки в Telegram через своего бота
@@ -1458,7 +1458,7 @@
 ⏰ <b>Время:</b> ${new Date().toLocaleString('ru-RU')}
 🌐 <b>Сайт:</b> bsanjik.kz
 
-<a href="mailto:${formData.email}">📧 Ответить на Email</a> | <a href="https://wa.me/+77085888664">📱 WhatsApp</a>`;
+<a href="mailto:${formData.email}">📧 Ответить на Email</a> | <a href="https://wa.me/+1234567890">📱 WhatsApp</a>`;
 
       try {
         const telegramURL = `https://api.telegram.org/bot${FORM_CONFIG.TELEGRAM_BOT_TOKEN}/sendMessage`;
@@ -1678,7 +1678,7 @@
                 
                 // Отслеживание цели конверсии
                 gtag('event', 'conversion', {
-                  send_to: 'G-HJ1HVSPDEB/lead',
+                  send_to: 'G-XXXXXXXXXX/lead',
                   event_category: 'Lead',
                   event_label: 'Contact Form Submit'
                 });
@@ -1700,8 +1700,8 @@
               
               // Отслеживание в Yandex.Metrica
               if (typeof ym !== 'undefined') {
-                ym(104155118, 'reachGoal', 'FORM_SUBMIT');
-                ym(104155118, 'reachGoal', 'CONTACT_LEAD');
+                ym(XXXXXXXX, 'reachGoal', 'FORM_SUBMIT');
+                ym(XXXXXXXX, 'reachGoal', 'CONTACT_LEAD');
               }
               
               console.log('📊 Конверсия отслежена в аналитике');
