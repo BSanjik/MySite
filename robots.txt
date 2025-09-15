@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Основные страницы
+Allow: /index.html
+Allow: /styles.css
+
+# Изображения и медиа
+Allow: /img/
+Allow: /img/favicon.ico
+Allow: /img/logo.png
+Allow: /img/og-image.jpg
+Allow: /img/apple-touch-icon.png
+Allow: /img/favicon-32x32.png
+Allow: /img/favicon-16x16.png
+
+# Sitemap
+Sitemap: https://bsanjik.kz/sitemap.xml
+
+# Основной хост
+Host: https://bsanjik.kz
